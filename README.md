@@ -45,7 +45,8 @@ Follow these steps to get the project running on your local machine:
 | `/login` & `/register` | **Authentication Pages**: Pages for logging in with credentials and creating a new account. | No |
 | `/products` | **Product List Page**: Displays a list of all products.  | No  |
 | `/products/[id]` | **Product Details Page**: Shows full details for a single product.  | No  |
-| `/dashboard/add-product` | **Protected Page**: A form to add new products.  | Yes  |
+| `/dashboard/add-product` | **Protected Page**: A form to add new products.  | Yes (defined manually)  |
+| `api/products` | **Data Api**: data storage | No | 
 
 ### Live Site & Repository Links
 * **Live Site:** `[Your-Vercel-Deployment-Link]`
