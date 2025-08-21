@@ -1,13 +1,7 @@
-import products from '../../data/productData.json';
+
 import Link from 'next/link';
 
 export const revalidate = 0;
-
-// // Utility to get 4 random products on each render
-// const getRandomProducts = (items, count) => {
-//     const shuffled = [...items].sort(() => Math.random() - 0.5);
-//     return shuffled.slice(0, count);
-// };
 
 const fetchFeaturedProducts = async () => {
     const res = await fetch(`https://gearit-njs.vercel.app/api/featured-products`, {
@@ -20,7 +14,6 @@ const fetchFeaturedProducts = async () => {
 };
 
 const ProductHighlights =async () => {
-    // const highlightedProducts = getRandomProducts(products, 4);
     const highlightedProducts = await fetchFeaturedProducts();
 
     return (

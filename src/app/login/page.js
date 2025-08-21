@@ -1,4 +1,3 @@
-// app/login/page.js
 
 "use client";
 
@@ -13,18 +12,18 @@ const LoginPage = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    // This will send the credentials to the NextAuth.js API route
+
     const result = await signIn("credentials", {
-      redirect: false, // Prevents an immediate redirect
+      redirect: false, 
       email,
       password,
     });
 
     if (result.ok) {
-      // On successful login, redirect to the products page
-      router.push("/products"); // As per assignment requirement [cite: 13]
+
+      router.push("/products"); 
     } else {
-      // Handle login error, e.g., show an alert
+
       alert("Login failed: " + result.error);
     }
   };

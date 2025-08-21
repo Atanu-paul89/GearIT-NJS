@@ -3,15 +3,11 @@ import products from '../../../data/productData.json';
 import Link from 'next/link';
 import Footer from '@/components/Footer';
 
-// You will no longer import the static JSON file
-// import products from '@/data/productData.json';
-
 const fetchProducts = async () => {
   const res = await fetch('https://gearit-njs.vercel.app/api/products', {
     cache: 'no-store',
   });
   if (!res.ok) {
-    // This will activate the nearest `error.js` Error Boundary
     throw new Error('Failed to fetch products');
   }
   return res.json();

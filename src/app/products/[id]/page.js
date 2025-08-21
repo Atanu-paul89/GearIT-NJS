@@ -1,6 +1,4 @@
 import Navbar from '@/components/Navbar';
-import products from '../../../../data/productData.json';
-import Image from 'next/image';
 import { notFound } from 'next/navigation';
 
 const fetchProduct = async (id) => {
@@ -36,14 +34,13 @@ const ProductDetailsPage = async ({ params }) => {
                 <div className="bg-gray-100 min-h-screen">
                     <main className="container mx-auto py-6 px-4">
                         <div className="bg-white p-8 rounded-lg shadow-lg flex flex-col md:flex-row items-start">
-                            {/* Image Section - This is the fix */}
-                            <div className="md:w-1/2 md:pr-8 mb-6 md:mb-0">
-                                {/* The image is now properly uncommented */}
+                            {/* Image Section  */}
+                            <div className="md:w-1/2 md:pr-8 mb-6 md:mb-0">         
                                 <img
                                     src={product.image}
                                     alt={product.name}
-                                    width={500} // You can adjust this to your needs
-                                    height={500} // You can adjust this to your needs
+                                    width={500} 
+                                    height={500} 
                                     className="rounded-lg object-cover w-full h-auto"
                                 />
                             </div>

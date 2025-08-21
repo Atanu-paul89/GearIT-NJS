@@ -1,4 +1,4 @@
-// components/Hero.jsx
+
 
 import Link from 'next/link';
 

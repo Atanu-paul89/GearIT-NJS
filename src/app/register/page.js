@@ -1,4 +1,3 @@
-// app/register/page.js
 
 "use client";
 
@@ -15,23 +14,18 @@ const RegisterPage = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    setError(""); // Clear any previous errors
+    setError(""); 
 
-    // Here you would typically send a request to a registration API endpoint.
-    // For this assignment, we'll simulate a successful registration.
     console.log("Registering user with:", { name, email, password });
 
-    // Simulate an API call
     try {
-      // In a real application, a successful API response would be
-      // a trigger to redirect the user.
       const response = { success: true }; 
 
       if (response.success) {
         toast.success("Registration successful! Please log in.");
         router.push("/login");
       } else {
-        // Handle API errors
+
         setError("Registration failed. Please try again.");
       }
     } catch (err) {

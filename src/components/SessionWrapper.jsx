@@ -1,4 +1,3 @@
-// components/SessionWrapper.jsx
 
 "use client";
 
