@@ -7,17 +7,19 @@ import Footer from '@/components/Footer';
 // import products from '@/data/productData.json';
 
 const fetchProducts = async () => {
-  const res = await fetch('http://localhost:3000/api/products');
+  const res = await fetch('https://gearit-njs.vercel.app/api/products', {
+    cache: 'no-store',
+  });
   if (!res.ok) {
     // This will activate the nearest `error.js` Error Boundary
-    throw new Error('Failed to fetch data');
+    throw new Error('Failed to fetch products');
   }
   return res.json();
 };
 
 const ProductsPage = async () => {
 
-   const products = await fetchProducts();
+  const products = await fetchProducts();
 
   return (
     <div

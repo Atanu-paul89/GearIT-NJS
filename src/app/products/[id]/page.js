@@ -4,7 +4,7 @@ import Image from 'next/image';
 import { notFound } from 'next/navigation';
 
 const fetchProduct = async (id) => {
-    const res = await fetch(`http://localhost:3000/api/products/${id}`, {
+    const res = await fetch(`https://gearit-njs.vercel.app/api/products/${id}`, {
         cache: 'no-store',
     });
 
