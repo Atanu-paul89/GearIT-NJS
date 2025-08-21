@@ -1,5 +1,8 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import AOSWrapper from "./AOSWrapper";
+import { Toaster } from "react-hot-toast";
+import SessionWrapper from "@/components/SessionWrapper";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -22,7 +25,12 @@ export default function RootLayout({ children }) {
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        {children}
+        <AOSWrapper>
+          <SessionWrapper>
+          {children}
+          </SessionWrapper>
+          <Toaster />
+        </AOSWrapper>
       </body>
     </html>
   );

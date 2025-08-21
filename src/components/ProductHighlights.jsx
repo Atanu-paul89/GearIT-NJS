@@ -1,0 +1,106 @@
+// components/ProductHighlights.jsx
+
+// import products from '../../data/productData.json';
+// import Link from 'next/link';
+
+// const ProductHighlights = () => {
+//   // Get the first 4 products to display as highlights
+//   const highlightedProducts = products.slice(0, 4);
+
+//   return (
+//     <section className="py-12 bg-gray-100">
+//       <div className="container mx-auto px-4">
+//         <h2 className="text-3xl font-bold text-center mb-8">
+//           Featured Products
+//         </h2>
+//         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+//           {highlightedProducts.map((product) => (
+//             <div key={product.id} className="bg-white rounded-lg shadow-md p-6">
+//               <h3 className="text-xl font-semibold mb-2">{product.name}</h3>
+//               <p className="text-gray-600 mb-4">{product.shortDescription}</p>
+//               <div className="text-gray-600 font-bold text-lg mb-4">
+//                 BDT {product.price}
+//               </div>
+//               <Link href={`/products/${product.id}`}>
+//                 <button className="bg-gray-800 cursor-pointer hover:bg-gray-900 text-white py-2 px-4 rounded transition duration-300 w-full">
+//                   Details
+//                 </button>
+//               </Link>
+//             </div>
+//           ))}
+//         </div>
+//       </div>
+//     </section>
+//   );
+// };
+
+// export default ProductHighlights;
+
+
+
+// components/ProductHighlights.jsx
+
+import products from '../../data/productData.json';
+import Link from 'next/link';
+
+// Utility to get 4 random products on each render
+const getRandomProducts = (items, count) => {
+    const shuffled = [...items].sort(() => Math.random() - 0.5);
+    return shuffled.slice(0, count);
+};
+
+const ProductHighlights = () => {
+    const highlightedProducts = getRandomProducts(products, 4);
+
+    return (
+        <div
+            data-aos="fade-left"
+            data-aos-offset="100"
+            data-aos-delay="100"
+            data-aos-duration="600"
+            data-aos-easing="ease-in-out"
+        >
+            <section className="py-12 bg-gray-100">
+                <div className="container mx-auto px-4">
+                    <h2 className="text-3xl font-bold text-center mb-8">
+                        Featured Products
+                    </h2>
+
+                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                        {highlightedProducts.map((product) => (
+                            <div
+                                key={product.id}
+                                className="bg-white rounded-lg shadow-md p-4 flex flex-col justify-between "
+                            >
+                                {/* Image */}
+                                <img
+                                    src={product.image}
+                                    alt={product.name}
+                                    className="w-2/3 h-2/3  mx-auto object-cover rounded-md mb-4"
+                                />
+
+                                {/* Content */}
+                                <div className="flex flex-col items-center text-center flex-grow">
+                                    <h2 className="text-lg font-semibold mb-2">{product.name}</h2>
+                                    <p className="text-gray-600 text-base mb-4">{product.shortDescription}</p>
+                                    <div className="text-orange-500 font-bold text-lg mb-4">
+                                        BDT {product.price}
+                                    </div>
+                                </div>
+
+                                {/* Button */}
+                                <Link href={`/products/${product.id}`} className="mt-4">
+                                    <button className="w-full bg-gray-800 hover:bg-gray-700 text-white py-2 px-4 cursor-pointer rounded transition duration-300">
+                                        View Details
+                                    </button>
+                                </Link>
+                            </div>
+                        ))}
+                    </div>
+                </div>
+            </section>
+        </div>
+    );
+};
+
+export default ProductHighlights;

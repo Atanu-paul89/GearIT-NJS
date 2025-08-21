@@ -1,0 +1,382 @@
+[
+  {
+    "id": 1,
+    "name": "TeslaPhone II",
+    "shortDescription": "A cutting-edge smartphone with a powerful camera.",
+    "detailsDescription": "Experience the future with Smartphone X, featuring a stunning AMOLED display, a triple-lens camera system, and a long-lasting battery. Perfect for capturing life's moments.",
+    "features": [
+      "144Hz AMOLED Display",
+      "108MP Main Camera",
+      "8000mAh Battery",
+      "Fast Charging"
+    ],
+    "image": "https://bme.com.bd/uploads/products/thumbnail/PeVnxzxX5cdUIi9uOS2vKU03Ken2bgPctUMXy0IH.png",
+    "companyName": "TechCorp",
+    "productOrigin": "USA",
+    "price": 85000,
+    "ratings": 4.8,
+    "warrantyDuration": "2 year",
+    "productLaunchDate": "2025-01-15"
+  },
+  {
+    "id": 2,
+    "name": "Wireless Headphones Pro",
+    "shortDescription": "Immersive sound and active noise cancellation.",
+    "detailsDescription": "Dive into your music with Wireless Headphones Pro. Enjoy crystal-clear audio and block out the world with advanced noise-cancellation technology. Comes with a comfortable, ergonomic design.",
+    "features": [
+      "Active Noise Cancellation",
+      "30-hour battery life",
+      "Bluetooth 5.2",
+      "Ergonomic fit"
+    ],
+    "image": "https://tecsa.com.bd/storage/products-image-wbg-i9-num-b4-1.jpg",
+    "companyName": "AudioFlow",
+    "productOrigin": "Japan",
+    "price": 12000,
+    "ratings": 4.5,
+    "warrantyDuration": "2 years",
+    "productLaunchDate": "2024-11-20"
+  },
+  {
+    "id": 3,
+    "name": "Ultra 4K OLED TV",
+    "shortDescription": "A stunning visual experience with perfect blacks.",
+    "detailsDescription": "The Ultra 4K OLED TV brings cinema-quality visuals to your home. With pixel-perfect black levels and vibrant colors, every scene comes to life. Features a sleek, bezel-less design.",
+    "features": [
+      "4K Resolution",
+      "OLED Display",
+      "Smart TV OS",
+      "Multiple HDMI ports"
+    ],
+    "image": "https://image.made-in-china.com/2f0j00zmBcHJuEnYbe/Large-Size-LED-TV-55-Inches-Smart-Big-Android-OLED-LED-TV-4K-Smart-Televisions.jpg",
+    "companyName": "VisionTech",
+    "productOrigin": "South Korea",
+    "price": 150000,
+    "ratings": 4.9,
+    "warrantyDuration": "3 years",
+    "productLaunchDate": "2025-03-10"
+  },
+  {
+    "id": 4,
+    "name": "Smart Watch Sport",
+    "shortDescription": "Track your fitness and stay connected on the go.",
+    "detailsDescription": "The Smart Watch Sport is your ultimate fitness companion. Monitor your heart rate, track your workouts, and get notifications directly on your wrist. Durable and water-resistant.",
+    "features": [
+      "Heart Rate Monitor",
+      "GPS Tracking",
+      "Water Resistant",
+      "Long Battery Life"
+    ],
+    "image": "https://static-01.daraz.com.bd/p/99fb42c1f9d959c81735782ea88aeba8.jpg",
+    "companyName": "FitGear",
+    "productOrigin": "China",
+    "price": 8500,
+    "ratings": 4.6,
+    "warrantyDuration": "1 year",
+    "productLaunchDate": "2025-02-05"
+  },
+  {
+    "id": 5,
+    "name": "Compact Digital Camera",
+    "shortDescription": "Capture high-quality photos with ease.",
+    "detailsDescription": "This compact digital camera is perfect for both amateurs and professionals. With its high-resolution sensor and intuitive controls, you can capture stunning photos and videos in any setting.",
+    "features": [
+      "24MP Sensor",
+      "Optical Zoom",
+      "Full HD Video Recording",
+      "Wi-Fi Connectivity"
+    ],
+    "image": "https://www.popphoto.com/uploads/2019/01/17/FMRRXMDNOS6TNF27DBAKLS7RNA.jpg?auto=webp",
+    "companyName": "PhotoCraft",
+    "productOrigin": "Germany",
+    "price": 32000,
+    "ratings": 4.7,
+    "warrantyDuration": "1.5 years",
+    "productLaunchDate": "2024-09-22"
+  },
+  {
+    "id": 6,
+    "name": "Noise Cancelling Earbuds",
+    "shortDescription": "Tiny earbuds with powerful sound and ANC.",
+    "detailsDescription": "These earbuds deliver a premium audio experience in a compact form. Featuring active noise cancellation and a secure, comfortable fit, they are perfect for daily commutes and workouts.",
+    "features": [
+      "Active Noise Cancellation",
+      "IPX4 Water Resistance",
+      "Touch Controls",
+      "Compact Charging Case"
+    ],
+    "image": "https://miniongadgets.com/wp-content/uploads/2025/01/t13ancblack-430x430.webp",
+    "companyName": "SoundWave",
+    "productOrigin": "USA",
+    "price": 9500,
+    "ratings": 4.4,
+    "warrantyDuration": "1 year",
+    "productLaunchDate": "2025-04-01"
+  },
+  {
+    "id": 7,
+    "name": "Portable Bluetooth Speaker",
+    "shortDescription": "Loud, clear sound in a portable design.",
+    "detailsDescription": "Take your music anywhere with this powerful and portable Bluetooth speaker. Its rugged design and long battery life make it ideal for outdoor adventures. Connects wirelessly to any device.",
+    "features": [
+      "Rich Bass",
+      "Waterproof IPX7",
+      "24-hour Battery Life",
+      "Built-in Microphone"
+    ],
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTC_b9hOYoHabAoH0dWGTVin3EXdb_WcAuTCA&s",
+    "companyName": "SonicBoom",
+    "productOrigin": "China",
+    "price": 6000,
+    "ratings": 4.2,
+    "warrantyDuration": "1 year",
+    "productLaunchDate": "2024-10-05"
+  },
+  {
+    "id": 8,
+    "name": "Robot Vacuum Cleaner",
+    "shortDescription": "Effortless cleaning with smart navigation.",
+    "detailsDescription": "Let the Robot Vacuum Cleaner do the work for you. With smart mapping technology and powerful suction, it cleans your home efficiently, even in hard-to-reach areas. Control it with your smartphone.",
+    "features": [
+      "Smart Mapping",
+      "Automatic Charging",
+      "App Control",
+      "HEPA Filter"
+    ],
+    "image": "https://media.istockphoto.com/id/1364180194/vector/robot-vacuum-cleaner.jpg?s=612x612&w=0&k=20&c=zoGOGPllcmTfR1qOQUvYgCYfWkRrwg1p0FLuI4zT3bI=",
+    "companyName": "CleanBotics",
+    "productOrigin": "Japan",
+    "price": 45000,
+    "ratings": 4.8,
+    "warrantyDuration": "2 years",
+    "productLaunchDate": "2025-05-18"
+  },
+  {
+    "id": 9,
+    "name": "Smart Home Hub",
+    "shortDescription": "Control all your smart devices from one place.",
+    "detailsDescription": "The Smart Home Hub is the central brain of your connected home. It seamlessly integrates with a wide range of devices, allowing you to manage lighting, security, and more with simple voice commands or through the app.",
+    "features": [
+      "Voice Activated",
+      "Multi-device Integration",
+      "Secure Connectivity",
+      "Easy Setup"
+    ],
+    "image": "https://m.media-amazon.com/images/I/61guzpgr5ZL._UF894,1000_QL80_.jpg",
+    "companyName": "HomeLink",
+    "productOrigin": "USA",
+    "price": 18000,
+    "ratings": 4.5,
+    "warrantyDuration": "1 year",
+    "productLaunchDate": "2025-06-25"
+  },
+  {
+    "id": 10,
+    "name": "Portable Power Bank",
+    "shortDescription": "Never run out of power on the go.",
+    "detailsDescription": "The Portable Power Bank provides a reliable charge for your devices wherever you are. Its high-capacity battery and fast-charging ports ensure you stay connected all day.",
+    "features": [
+      "20000mAh Capacity",
+      "USB-C and USB-A Ports",
+      "Compact Design",
+      "LED Power Indicator"
+    ],
+    "image": "https://media.istockphoto.com/id/1159572124/photo/silver-power-bank.jpg?s=612x612&w=0&k=20&c=BSRT2SGzyrrCPRi9hv7zxEn_2GEdrwkxm1pLAlORTds=",
+    "companyName": "ChargeMax",
+    "productOrigin": "China",
+    "price": 3500,
+    "ratings": 4.6,
+    "warrantyDuration": "6 months",
+    "productLaunchDate": "2024-12-10"
+  },
+  {
+    "id": 11,
+    "name": "Gaming Keyboard RGB",
+    "shortDescription": "Mechanical keys and customizable RGB lighting.",
+    "detailsDescription": "Designed for gamers, this keyboard offers a tactile and responsive feel. The customizable RGB lighting and anti-ghosting technology give you a competitive edge. Built with durable materials for long-term use.",
+    "features": [
+      "Mechanical Switches",
+      "Per-key RGB Lighting",
+      "Anti-Ghosting",
+      "Durable Design"
+    ],
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCFyMR_bGNQSx6gDSlc5LUP9j4iOr0uMXqyg&s",
+    "companyName": "GameGear",
+    "productOrigin": "Taiwan",
+    "price": 7000,
+    "ratings": 4.7,
+    "warrantyDuration": "2 years",
+    "productLaunchDate": "2025-02-28"
+  },
+  {
+    "id": 12,
+    "name": "Wireless Mouse Ergonomic",
+    "shortDescription": "Comfortable and precise for long hours of work.",
+    "detailsDescription": "The Wireless Mouse Ergonomic is designed for comfort. Its shape reduces wrist strain, and its high-precision sensor ensures smooth and accurate tracking. Perfect for both office and creative tasks.",
+    "features": [
+      "Ergonomic Design",
+      "Adjustable DPI",
+      "Silent Clicks",
+      "Long Battery Life"
+    ],
+    "image": "https://techdiversitybd.com/wp-content/uploads/2024/05/AJAZZ-AJ199-Pro-4K-Tri-mode-Mouse-white.jpeg",
+    "companyName": "ErgoTech",
+    "productOrigin": "Germany",
+    "price": 2800,
+    "ratings": 4.5,
+    "warrantyDuration": "1 year",
+    "productLaunchDate": "2024-08-14"
+  },
+  {
+    "id": 13,
+    "name": "Laptop Stand Adjustable",
+    "shortDescription": "Improve your posture and cooling with this stand.",
+    "detailsDescription": "This adjustable laptop stand helps you work more comfortably by raising your screen to eye level. It also improves air circulation, preventing your laptop from overheating during long work sessions.",
+    "features": [
+      "Adjustable Height",
+      "Foldable Design",
+      "Ventilated",
+      "Fits all laptops"
+    ],
+    "image": "https://static.vecteezy.com/system/resources/previews/041/453/370/non_2x/laptop-stand-on-transparent-background-png.png",
+    "companyName": "CoolLift",
+    "productOrigin": "China",
+    "price": 1500,
+    "ratings": 4.3,
+    "warrantyDuration": "6 months",
+    "productLaunchDate": "2025-01-01"
+  },
+  {
+    "id": 14,
+    "name": "External SSD 1TB",
+    "shortDescription": "Blazing-fast storage in a pocket-sized drive.",
+    "detailsDescription": "Store and transfer large files in seconds with this high-speed external SSD. Its compact and durable design makes it easy to carry with you, while the 1TB capacity provides ample space for all your data.",
+    "features": [
+      "1TB Storage",
+      "USB 3.2 Gen 2",
+      "Compact & Portable",
+      "Shock Resistant"
+    ],
+    "image": "https://thumbs.dreamstime.com/b/d-nvme-ssd-isolated-white-background-illustration-highlighting-its-compact-design-high-speed-data-transfer-367963329.jpg",
+    "companyName": "DataVault",
+    "productOrigin": "USA",
+    "price": 9500,
+    "ratings": 4.9,
+    "warrantyDuration": "3 years",
+    "productLaunchDate": "2025-03-05"
+  },
+  {
+    "id": 15,
+    "name": "Gaming Monitor 27''",
+    "shortDescription": "165Hz refresh rate with 1.5k oled panel.",
+    "detailsDescription": "The 27'' Gaming Monitor delivers an incredibly smooth and responsive gaming experience. With a high refresh rate and fast response time, it reduces motion blur and ghosting for a clearer picture.",
+    "features": [
+      "144Hz Refresh Rate",
+      "1ms Response Time",
+      "Full HD Resolution",
+      "Curved Display"
+    ],
+    "image": "https://img.freepik.com/premium-photo/monitoi-hd-isolated-white-background_1014317-388.jpg",
+    "companyName": "PixelPlay",
+    "productOrigin": "South Korea",
+    "price": 38000,
+    "ratings": 4.6,
+    "warrantyDuration": "2 years",
+    "productLaunchDate": "2024-11-15"
+  },
+  {
+    "id": 16,
+    "name": "Smart Air Purifier",
+    "shortDescription": "Breathe cleaner air with a smart purifier.",
+    "detailsDescription": "The Smart Air Purifier removes allergens, pollutants, and dust from your indoor air. With app control, you can monitor air quality and adjust settings from anywhere.",
+    "features": [
+      "HEPA Filter",
+      "App Control",
+      "Quiet Operation",
+      "Smart Sensors"
+    ],
+    "image": "https://png.pngtree.com/png-clipart/20231104/original/pngtree-realistic-air-purifier-png-image_13504867.png",
+    "companyName": "AirClear",
+    "productOrigin": "Japan",
+    "price": 10500,
+    "ratings": 4.4,
+    "warrantyDuration": "1 year",
+    "productLaunchDate": "2025-01-20"
+  },
+  {
+    "id": 17,
+    "name": "Wi-Fi 6 Router",
+    "shortDescription": "Next-gen speed and coverage for your home.",
+    "detailsDescription": "Upgrade your network with the Wi-Fi 6 Router. It offers faster speeds, reduced latency, and a wider coverage area, allowing multiple devices to connect seamlessly without lag.",
+    "features": [
+      "Wi-Fi 6 Technology",
+      "Dual-Band Support",
+      "Multiple Antennas",
+      "Easy Setup"
+    ],
+    "image": "https://img.freepik.com/premium-photo/wireless-internet-router-white-background-isolated-3d-illustration_356060-3408.jpg",
+    "companyName": "NetLink",
+    "productOrigin": "Taiwan",
+    "price": 5500,
+    "ratings": 4.7,
+    "warrantyDuration": "2 years",
+    "productLaunchDate": "2025-04-10"
+  },
+  {
+    "id": 18,
+    "name": "Laptop Backpack",
+    "shortDescription": "Stylish and secure way to carry your laptop.",
+    "detailsDescription": "This laptop backpack is designed for both style and functionality. It features a padded compartment for your laptop, multiple pockets for accessories, and an anti-theft design.",
+    "features": [
+      "Padded Laptop Sleeve",
+      "Water Resistant",
+      "Anti-Theft Pocket",
+      "Comfortable Straps"
+    ],
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkLI3v0tMUGq2BGPaChF0WhF1dBgcQ03c5Sw&s",
+    "companyName": "GearUp",
+    "productOrigin": "China",
+    "price": 2500,
+    "ratings": 4.2,
+    "warrantyDuration": "1 year",
+    "productLaunchDate": "2024-09-01"
+  },
+  {
+    "id": 19,
+    "name": "Bluetooth Keyboard",
+    "shortDescription": "A sleek, full-sized keyboard for multi-device use.",
+    "detailsDescription": "This Bluetooth keyboard provides a comfortable typing experience with its full-sized layout and quiet keys. Easily switch between multiple devices with the press of a button.",
+    "features": [
+      "Multi-Device Connection",
+      "Full-Sized Layout",
+      "Quiet Keys",
+      "Long Battery Life"
+    ],
+    "image": "https://png.pngtree.com/png-vector/20250622/ourmid/pngtree-bluetooth-keyboard-isolated-on-transparent-background-png-image_16572034.png",
+    "companyName": "TypePro",
+    "productOrigin": "USA",
+    "price": 3800,
+    "ratings": 4.5,
+    "warrantyDuration": "1.5 years",
+    "productLaunchDate": "2025-05-20"
+  },
+  {
+    "id": 20,
+    "name": "Smart Doorbell",
+    "shortDescription": "See and speak to visitors from anywhere.",
+    "detailsDescription": "The Smart Doorbell lets you know who is at your door, even when you're not home. With HD video, two-way audio, and motion detection, you can monitor your front door from your smartphone.",
+    "features": [
+      "HD Video",
+      "Two-Way Audio",
+      "Motion Detection",
+      "Cloud Storage"
+    ],
+    "image": "https://png.pngtree.com/png-vector/20240716/ourmid/pngtree-home-surveillance-made-easy-smart-doorbell-camera-png-image_13130310.png",
+    "companyName": "SecureHome",
+    "productOrigin": "USA",
+    "price": 11000,
+    "ratings": 4.8,
+    "warrantyDuration": "2 years",
+    "productLaunchDate": "2025-07-01"
+  }
+]
