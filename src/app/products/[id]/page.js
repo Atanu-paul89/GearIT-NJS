@@ -1,97 +1,27 @@
-// app/products/[id]/page.js
-
-// import Navbar from '@/components/Navbar';
-// import products from '../../../../data/productData.json';
-// import Image from 'next/image';
-// import { notFound } from 'next/navigation';
-
-// const ProductDetailsPage = ({ params }) => {
-//     // Find the product that matches the dynamic ID from the URL
-//     const product = products.find((p) => p.id.toString() === params.id);
-
-//     // If the product is not found, return a 404 page
-//     if (!product) {
-//         notFound();
-//     }
-
-//     return (
-//         <main>
-//             <Navbar />
-//             <div className="bg-gray-100 min-h-screen">
-//                 <main className="container mx-auto py-12 px-4">
-//                     <div className="bg-white p-8 rounded-lg shadow-lg flex flex-col md:flex-row items-center">
-//                         {/* Note: The image component is commented out.
-//           You'll need to use the Next.js Image component for optimization. */}
-//                         {/*
-//           <div className="md:w-1/2 md:pr-8">
-//             <Image
-//               src={product.image}
-//               alt={product.name}
-//               width={500}
-//               height={500}
-//               layout="responsive"
-//               className="rounded-lg"
-//             />
-//           </div>
-//           */}
-
-//                         <div className="md:w-1/2">
-//                             <h1 className="text-4xl font-bold mb-2">{product.name}</h1>
-//                             <p className="text-gray-600 text-xl mb-4">{product.shortDescription}</p>
-//                             <div className="text-orange-500 font-bold text-3xl mb-4">
-//                                 BDT {product.price}
-//                             </div>
-
-//                             <p className="text-gray-700 mb-6">{product.detailsDescription}</p>
-
-//                             <h3 className="text-2xl font-semibold mb-2">Features</h3>
-//                             <ul className="list-disc list-inside text-gray-700 mb-6">
-//                                 {product.features.map((feature, index) => (
-//                                     <li key={index}>{feature}</li>
-//                                 ))}
-//                             </ul>
-
-//                             <div className="grid grid-cols-2 gap-4 text-gray-700">
-//                                 <div>
-//                                     <strong>Company:</strong> {product.companyName}
-//                                 </div>
-//                                 <div>
-//                                     <strong>Origin:</strong> {product.productOrigin}
-//                                 </div>
-//                                 <div>
-//                                     <strong>Rating:</strong> {product.ratings} / 5
-//                                 </div>
-//                                 <div>
-//                                     <strong>Warranty:</strong> {product.warrantyDuration}
-//                                 </div>
-//                             </div>
-//                         </div>
-//                     </div>
-//                 </main>
-//             </div>
-//         </main>
-//     );
-// };
-
-// export default ProductDetailsPage;
-
-
-
-// app/products/[id]/page.js
-
-// Make sure you have your Navbar component in a components folder
-// The path for the data file needs to be adjusted based on the new folder structure.
 import Navbar from '@/components/Navbar';
 import products from '../../../../data/productData.json';
 import Image from 'next/image';
 import { notFound } from 'next/navigation';
 
-const ProductDetailsPage = ({ params }) => {
-    const product = products.find((p) => p.id.toString() === params.id);
+const fetchProduct = async (id) => {
+    const res = await fetch(`http://localhost:3000/api/products/${id}`, {
+        cache: 'no-store',
+    });
 
-    if (!product) {
+    if (res.status === 404) {
         notFound();
     }
+
+    if (!res.ok) {
+        throw new Error('Failed to fetch product details');
+    }
+
+    return res.json();
+};
+
+const ProductDetailsPage = async ({ params }) => {
+    
+    const product = await fetchProduct(params.id);
 
     return (
         <div

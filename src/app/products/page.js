@@ -1,10 +1,24 @@
-
 import Navbar from '@/components/Navbar';
 import products from '../../../data/productData.json';
 import Link from 'next/link';
 import Footer from '@/components/Footer';
 
-const ProductsPage = () => {
+// You will no longer import the static JSON file
+// import products from '@/data/productData.json';
+
+const fetchProducts = async () => {
+  const res = await fetch('http://localhost:3000/api/products');
+  if (!res.ok) {
+    // This will activate the nearest `error.js` Error Boundary
+    throw new Error('Failed to fetch data');
+  }
+  return res.json();
+};
+
+const ProductsPage = async () => {
+
+   const products = await fetchProducts();
+
   return (
     <div
       data-aos="fade-up"
@@ -23,13 +37,18 @@ const ProductsPage = () => {
               {products.map((product) => (
                 <div
                   key={product.id}
-                  className="bg-white  rounded-lg shadow-md p-4 flex flex-col justify-between"
+                  data-aos="fade-in"
+                  data-aos-offset="100"
+                  data-aos-delay="100"
+                  data-aos-duration="800"
+                  data-aos-easing="ease-in-out"
+                  className="bg-white rounded-lg shadow-md p-4 flex flex-col justify-between"
                 >
                   {/* Image */}
                   <img
                     src={product.image}
                     alt={product.name}
-                    className="w-2/3 h-2/3  mx-auto object-cover rounded-md mb-4"
+                    className="w-2/3 h-2/3 mx-auto object-cover rounded-md mb-4"
                   />
 
                   {/* Content */}
@@ -43,7 +62,7 @@ const ProductsPage = () => {
 
                   {/* Button */}
                   <Link href={`/products/${product.id}`} className="mt-4">
-                    <button className="w-full bg-gray-800 hover:bg-gray-700 text-white py-2 px-4 rounded transition duration-300">
+                    <button className="w-full cursor-pointer bg-gray-800 hover:bg-gray-700 text-white py-2 px-4 rounded transition duration-300">
                       View Details
                     </button>
                   </Link>
@@ -52,11 +71,12 @@ const ProductsPage = () => {
             </div>
           </main>
         </div>
-        <Footer/>
+        <Footer />
       </main>
     </div>
   );
 };
 
 export default ProductsPage;
+
 
