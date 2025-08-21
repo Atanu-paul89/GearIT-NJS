@@ -49,4 +49,4 @@ Follow these steps to get the project running on your local machine:
 | `api/products` | **Data Api**: data storage | No | 
 
 ### Live Site & Repository Links
-* **Live Site:** `[Your-Vercel-Deployment-Link]`
+* **Live Site:** https://gearit-njs.vercel.app/
