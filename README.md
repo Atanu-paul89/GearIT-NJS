@@ -22,7 +22,7 @@ Follow these steps to get the project running on your local machine:
 
 1.  **Clone the repository:**
     ```bash
-    git clone [Your-GitHub-Repo-Link]
+    git clone https://github.com/Atanu-paul89/GearIT-NJS
     cd gearit-njs
     ```
 
