@@ -41,11 +41,11 @@ Follow these steps to get the project running on your local machine:
 
 | Route | Description | Authentication Required |
 | :--- | :--- | :--- |
-| `/` | [cite_start]**Landing Page**: Main entry point with a Navbar, Hero, Product Highlights, and Footer.  | No  |
-| `/login` & `/register` | [cite_start]**Authentication Pages**: Pages for logging in with credentials and creating a new account. | No |
-| `/products` | [cite_start]**Product List Page**: Displays a list of all products.  | No  |
-| `/products/[id]` | [cite_start]**Product Details Page**: Shows full details for a single product.  | No  |
-| `/dashboard/add-product` | [cite_start]**Protected Page**: A form to add new products.  | Yes  |
+| `/` | **Landing Page**: Main entry point with a Navbar, Hero, Product Highlights, and Footer.  | No  |
+| `/login` & `/register` | **Authentication Pages**: Pages for logging in with credentials and creating a new account. | No |
+| `/products` | **Product List Page**: Displays a list of all products.  | No  |
+| `/products/[id]` | **Product Details Page**: Shows full details for a single product.  | No  |
+| `/dashboard/add-product` | **Protected Page**: A form to add new products.  | Yes  |
 
 ### Live Site & Repository Links
 * **Live Site:** `[Your-Vercel-Deployment-Link]`
