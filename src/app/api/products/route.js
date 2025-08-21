@@ -1,41 +1,9 @@
-// // app/api/products/route.js
-
-// import { NextResponse } from "next/server";
-// import productsData from "../../../../data/productData.json";
-
-// // GET handler to retrieve all products
-// export async function GET() {
-//     return NextResponse.json(productsData);
-// }
-
-// export async function POST(request) {
-//     const newProduct = await request.json();
-
-//     const newId = productsData.length + 1;
-
-//     console.log(`Simulating adding a new product with ID ${newId}:`, newProduct);
-
-//     // Return a success response
-//     return NextResponse.json(
-//         {
-//             message: "Product added successfully (simulated).",
-//             data: { ...newProduct, id: newId },
-//         },
-//         { status: 201 }
-//     );
-// }
-
-
-// app/api/products/route.js
-
 import { NextResponse } from "next/server";
 import initialProductsData from "../../../../data/productData.json";
 
-// Use a variable to store products in memory for the current session.
-// This array will be updated by POST requests and read by GET requests.
 const products = [...initialProductsData];
 
-// GET handler to retrieve all products
+
 export async function GET() {
   return NextResponse.json(products);
 }
