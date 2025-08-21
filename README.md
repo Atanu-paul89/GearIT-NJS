@@ -1,3 +1,5 @@
+<img width="1892" height="885" alt="Screenshot 2025-08-21 221601" src="https://github.com/user-attachments/assets/f92e0f2e-6188-4ee5-952d-86d98cfbf8d5" />
+
 # GearIT E-commerce Dashboard
 
 This is a simple e-commerce dashboard application built with Next.js 15, focusing on a robust authentication flow and product management features. The application is designed to be fully responsive and includes a protected route for adding new products.
@@ -46,5 +48,4 @@ Follow these steps to get the project running on your local machine:
 | `/dashboard/add-product` | [cite_start]**Protected Page**: A form to add new products. [cite: 21, 23] | [cite_start]Yes [cite: 22] |
 
 ### Live Site & Repository Links
-* **GitHub Repository:** `[Your-GitHub-Repo-Link]`
 * **Live Site:** `[Your-Vercel-Deployment-Link]`
